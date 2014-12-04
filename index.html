@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="creator" content="Mike English" />
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<!-- <meta name="DC.Identifier" content="protocol.club" /> -->
+<meta name="DC.Date.Issued" content="November, 2014" />
+<meta name="DC.Creator" content="Mike English &lt;mike.english@gmail.com&gt;" />
+<meta name="DC.Description.Abstract" content="This website explores the fundamental and unique learning opportunities provided by the implmentation of standarized protocols. It is a place for curious minds to explore and experiment, to educate and be educated about protocols and implementations old and new alike. This document captures the author's basic requirements and offers guidance regarding the use and purpose of this website.  Additional guidance may be provided at any time. This document reflects the experimental nature of that guidance and prepares it for future inclusion in more formal protocol.club Guide." />
+<meta name="DC.Title" content="rfc Style Guide" />
+
+    <link rel="icon" href="/images/protocolclub.png" type="image/png" />
+    <link rel="shortcut icon" href="/images/protocolclub.png" type="image/png" />
+    <title>protocol.club</title>
+    
+    
+    <style type="text/css">
+	body {
+	    margin: 0px 8px;
+            font-size: 1em;
+            background-color: black;
+            color: #0D0;
+	}
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	    font-weight: bold;
+            line-height: 0pt;
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+	    font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+	.pre {
+	    white-space: pre;
+	    font-family: monospace;
+	}
+	.header{
+	    font-weight: bold;
+	}
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        a {
+          color: yellowgreen;
+        }        
+        a.selflink {
+          color: #0D0;
+          text-decoration: none;
+        }
+
+        @media print {
+            body {
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+	@media screen {
+	    .grey, .grey a:link, .grey a:visited {
+		color: #777;
+	    }
+            .docinfo {
+                background-color: #111;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+
+            .bggrn { background-color: #05F; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+	}
+    </style>
+ 
+</head>
+
+<!-- <body onload="addHeaderTags()"> -->
+<body>
+
+   <div style="height: 13px;">
+      <div 
+         style="height: 6px; position: absolute;"
+         class="pre noprint docinfo bggrn">                                                                        </div>
+
+   </div>
+
+<!--
+<span class="pre noprint docinfo top">[<a href="../html/" title="Document search and retrieval page">Docs</a>] [<a href="/rfc/rfc7322.txt" title="Plaintext version of this document">txt</a>|<a href="/pdf/rfc7322" title="PDF version of this document">pdf</a>] [<a href="./draft-iab-styleguide" title="draft-iab-styleguide">draft-iab-styleguide</a>] [<a href="/rfcdiff?difftype=hwdiff&amp;url2=rfc7322"title="Inline diff (wdiff)">Diff1</a>][<a href="/rfcdiff?url2=rfc7322" title="Side-by-sidediff">Diff2</a>]                 </span><br />
+-->
+
+
+<span class="pre noprint docinfo">                                                                        </span><br />
+<span class="pre noprint docinfo">                                                            ASPIRATIONAL</span><br />
+<span class="pre noprint
+docinfo">                                                                        </span>
+
+
+<br />
+
+
+<pre>
+Protocol.Club                                                 <a href="/~englishm">M. English</a>
+Request for Comments: protocol.club
+Category: Aspirational                                     October 2014
+
+
+
+                            <span class="h1">Protocol.Club</span>
+
+Abstract
+
+   This website explores the fundamental and unique learning 
+   opportunities provided by the implementation of standardized 
+   protocols. It is a place for curious minds to explore and experiment,
+   to educate and be educated about protocols and implementations old 
+   and new alike.
+   
+   This document captures the author's basic requirements and offers
+   guidance regarding the use and purpose of this website.  Additional
+   guidance may be provided at any time. This document reflects the
+   experimental nature of that guidance and prepares it for future
+   inclusion in more formal protocol.club Guide.
+
+ 
+Status of This Website
+
+   This website is now <a href="https://goo.gl/forms/5jQSioCScs">accepting new members</a>; it exists for educational
+   and entertainment purposes as outlined above.
+
+   This website is a member of the wider tildeverse and has been
+   inspired in part by Paul Ford's original <a href="http://tilde.club">tilde.club</a>.
+
+   While federated with the <a href="http://tilde.club/~pfhawkins/othertildes.html">rest of the tildeverse</a> via NNTP (et
+   cetera), protocol.club has a stronger focus on its particular
+   mission and has several differences from other tilde boxes, namely:
+   we have a <a href="https://goo.gl/QO0BVD">Code of Conduct</a>, and we have some resources available
+   locally to aid development of protocol implementations and new
+   draft protocols. We also serve pages over HTTPS.
+   
+   Information about the current status of this website, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://protocol.club/">https://protocol.club</a>.
+
+General Notice
+
+   This website is subject to change at any time. It may be unreliable,
+   insecure, non-conformant, or non-existent. Please be patient, don't
+   expect too much, and help to keep things fun for everyone.
+
+
+
+
+</pre><br />
+</body></html>
+
