@@ -1,0 +1,137 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-size: 1.2em;
+  font-family: monospace;
+  color: #EEE;
+  background-color: #333;
+}
+
+article {
+  position: absolute;
+  display: block;
+  max-width: 45em;
+  padding-bottom: 3em;
+}
+
+.aspirational {
+  padding: 0 1em;
+  text-align: right;
+  margin-top: 0;
+  background: #444;
+  line-height: 400%;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: 1em;
+  font-family: monospace;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h2, h3, h4, h5 {
+  margin-top: 2em;
+}
+
+article > * {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+article > p {
+  padding-left: 3em;
+}
+
+.pre {
+  white-space: pre;
+  font-family: monospace;
+}
+
+a {
+  color: yellowgreen;
+}
+
+a[href^='#'] {
+  color: #0D0;
+  text-decoration: none;
+}
+
+@media print {
+  a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .no-print {
+    display: none;
+  }
+}
+
+@media screen {
+  article {
+    margin-top: 0.8em;
+  }
+
+  article:before {
+    content: '';
+
+    margin-top: -0.8em;
+    position: absolute;
+    background-color: #05F;
+    height: 0.4em;
+    width: 100%;
+  }
+}
+
+
+.abstract .rfc:before      { content: 'Request for Comments: '; }
+.abstract .category:before { content: 'Category: '; }
+
+.abstract {
+  margin-bottom: 3em;
+}
+
+.abstract p {
+  margin: 0;
+}
+
+  .abstract p:before {
+    display: inline-block;
+    min-width: 22ch;
+  }
+
+.abstract .author:before           { content: 'Author: '; }
+.abstract .publication-date:before { content: 'Publication Date: '; }
+
+@media (min-width: 45em) {
+  body { margin: 0 0.4em; }
+
+  .abstract p:before { display: inline; }
+
+  .abstract .author:before,
+  .abstract .publication-date:before {
+    content: '';
+  }
+
+  .abstract .title,
+  .abstract .author,
+  .abstract .category,
+  .abstract .published {
+    display: inline-block;
+    width: 49%;
+  }
+
+  .abstract .author,
+  .abstract .published {
+    text-align: right;
+  }
+}
