@@ -113,9 +113,13 @@ a[href^='#'] {
 .abstract .publication-date:before { content: 'Publication Date: '; }
 
 @media (min-width: 45em) {
-  body { margin: 0 0.4em; }
+  body {
+    margin: 0 0.4em;
+  }
 
-  .abstract p:before { display: inline; }
+  .abstract p:before {
+    display: inline;
+  }
 
   .abstract .author:before,
   .abstract .publication-date:before {
