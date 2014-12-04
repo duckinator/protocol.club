@@ -51,11 +51,6 @@ article > p {
   padding-left: 3em;
 }
 
-.pre {
-  white-space: pre;
-  font-family: monospace;
-}
-
 a {
   color: yellowgreen;
 }
